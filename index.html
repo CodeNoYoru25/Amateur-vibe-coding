@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kaboom.js Platformer (Single File)</title>
+    <style>
+      /* Center the canvas on the page with a neutral background around it */
+      html, body {
+        height: 100%;
+        margin: 0;
+        background: #1e1e1e;
+        display: grid;
+        place-items: center;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      }
+      canvas {
+        outline: 2px solid #111;
+        image-rendering: pixelated;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      Single-file Kaboom.js platformer
+      - Requirements summary implemented below:
+        - Uses Kaboom.js via CDN with <script type="module"> import
+        - 800x400 canvas
+        - Blue sky background
+        - Green ground
+        - Red square player with gravity, left/right, jump
+        - One yellow coin that increments score and disappears on touch
+        - Score label top-left
+        - Comments explaining each section
+    -->
+
+    <!-- The game script is now in a separate ES module file -->
+    <script type="module" src="game.js"></script>
+  </body>
+  </html>
+
+
